@@ -82,13 +82,32 @@
     </ul>
   </section>
 
+  <!-- Section: Search-->
+<section class="section section-search teal darken-1 white-text center">
+  <div class="container">
+    <div class="row">
+      
+    </div>
+  </div>
+</section>
+
+
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script>
     $(document).ready(function () {
+      // Init Side nav
       $('.button-collapse').sideNav();
       
+      // Init Slider
+      $('.slider').slider({
+          indicators: false,
+          height: 500,
+          transition: 500,
+          interval: 6000
+      });
+
     });
   </script>
 </body>

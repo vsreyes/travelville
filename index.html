@@ -14,7 +14,7 @@
   <title>Custom Materialize Theme</title>
 </head>
 
-<body>
+<body id="home" class="scrollspy">
   <div class="navbar-fixed">
     <nav class="teal">
       <div class="container">
@@ -83,7 +83,7 @@
   </section>
 
   <!-- Section: Search-->
-<section class="section section-search teal darken-1 white-text center">
+<section id="search" class="section section-search teal darken-1 white-text center scrollspy">
   <div class="container">
     <div class="row">
       <div class="col s12">
@@ -126,7 +126,7 @@
   </section>
 
   <!-- Section: Popular -->
-  <section class="section section-popular">
+  <section id="popular" class="section section-popular scrollspy">
     <div class="container">
       <div class="row">
         <h4 class="center"><span class="teal-text">Popular</span> Places</h4>
@@ -202,7 +202,7 @@
   </section>
 
   <!-- Section: Gallery -->
-  <section class="section section-galllery">
+  <section id="gallery" class="section section-galllery scrollspy">
     <div class="container">
       <h4 class="center">
         <span class="teal-text">Photo </span> Gallery
@@ -253,7 +253,7 @@
   </section>
 
   <!-- Section: Contact -->
-  <section class="section section-contact">
+  <section id="contact" class="section section-contact scrollspy">
     <div class="container">
       <div class="row">
         <div class="col s12 m6">
@@ -297,6 +297,11 @@
     </div>
   </section>
 
+  <!-- Footer -->
+  <footer class="section teal darken-2 white-text center">
+    <p class="flow-text">Travelville &copy; 2021</p>
+  </footer>
+
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
@@ -326,6 +331,9 @@
           "The Bahamas": null,
         }
       });
+
+      // Init Scrollspy
+      $('.scrollspy').scrollSpy();
 
     });
   </script>
